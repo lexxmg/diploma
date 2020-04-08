@@ -1,0 +1,328 @@
+
+.services-tags {
+	
+}
+
+.services-tags__item {
+	position: absolute;
+	top: 2%;
+	left: 6%;
+
+	font-size: 12px;
+	color: white;
+	font-weight: 700;
+}
+
+.services-tags__item--tag-1 {
+	top: 15%;
+	left: 6.6%;
+	
+	font-size: 50px; 
+
+	transform: rotate(29deg);
+
+	animation: tag_b-1 2s;
+}
+
+@keyframes tag_b-1{
+	0% {
+		top: 72%;
+		left: 35%;
+		font-size: 12px;
+		transform: rotate(180deg);
+	}
+
+	100% {
+		top: 15%;
+		left: 6.6%;
+		
+		font-size: 50px;
+		transform: rotate(29deg); 
+	}
+}
+
+.services-tags__item--tag-2 {
+	top: 67%;
+	left: 13%;
+	
+	font-size: 54px; 
+
+	transform: rotate(17deg);
+
+	animation: tag_b-2 2s;
+}
+
+@keyframes tag_b-2{
+	0% {
+		top: 72%;
+		left: 30%;
+		font-size: 12px;
+		transform: rotate(180deg);
+	}
+
+	100% {
+		top: 67%;
+		left: 13%;
+		
+		font-size: 54px;
+		transform: rotate(17deg); 
+	}
+}
+
+.services-tags__item--tag-3 {
+	top: 19%;
+	left: 86%;
+	
+	font-size: 41px; 
+
+	transform: rotate(-22deg);
+
+	animation: tag_b-3 2s;
+}
+
+@keyframes tag_b-3{
+	0% {
+		top: 72%;
+		left: 20%;
+		font-size: 12px;
+		transform: rotate(180deg);
+	}
+
+	100% {
+		top: 19%;
+		left: 86%;
+		
+		font-size: 41px;
+		transform: rotate(-22deg); 
+	}
+}
+
+.services-tags__item--tag-4 {
+	top: 82%;
+	left: 74%;
+	
+	font-size: 39px; 
+
+	transform: rotate(17deg);
+
+	animation: tag_b-4 2s;
+}
+
+@keyframes tag_b-4{
+	0% {
+		top: 72%;
+		left: 25%;
+		font-size: 12px;
+		transform: rotate(180deg);
+	}
+
+	100% {
+		top: 82%;
+		left: 74%;
+		
+		font-size: 39px;
+		transform: rotate(17deg); 
+	}
+}
+
+.services-tags__item--tag-5 {
+	top: 70%;
+	left: 92%;
+	
+	font-size: 47px; 
+
+	transform: rotate(-18deg);
+
+	animation: tag_b-5 2s;
+}
+
+@keyframes tag_b-5{
+	0% {
+		top: 72%;
+		left: 40%;
+		font-size: 12px;
+		transform: rotate(180deg);
+	}
+
+	100% {
+		top: 70%;
+		left: 92%;
+		
+		font-size: 47px;
+		transform: rotate(-18deg); 
+	}
+}
+
+@media (max-width: 1380px) {
+	.services-tags__item--tag-1 {
+		top: 7%;
+		left: 6.6%;
+	
+		font-size: 50px; 
+
+		transform: rotate(29deg);
+
+		animation: tag_b-1 2s;
+	}
+
+	@keyframes tag_b-1{
+		0% {
+			top: 72%;
+			left: 35%;
+			font-size: 12px;
+			transform: rotate(180deg);
+		}
+
+		100% {
+			top: 7%;
+			left: 6.6%;
+		
+			font-size: 50px;
+			transform: rotate(29deg); 
+		}
+	}
+
+	.services-tags__item--tag-2 {
+		top: 75%;
+		left: 13%;
+	
+		font-size: 54px; 
+
+		transform: rotate(17deg);
+
+		animation: tag_b-2 2s;
+	}
+
+	@keyframes tag_b-2{
+		0% {
+			top: 72%;
+			left: 30%;
+			font-size: 12px;
+			transform: rotate(180deg);
+		}
+
+		100% {
+			top: 75%;
+			left: 13%;
+		
+			font-size: 54px;
+			transform: rotate(17deg); 
+		}
+	}
+}
+
+@media (max-width: 1120px) {
+	.services-tags__item--tag-2 {
+		display: none;
+	}
+
+	.services-tags__item--tag-5 {
+		display: none;
+	}
+
+	.services-tags__item--tag-1 {
+		top: 4%;
+		left: 15%;
+	
+		font-size: 33px; 
+
+		transform: rotate(29deg);
+
+		animation: tag_b-1 2s;
+	}
+
+	@keyframes tag_b-1{
+		0% {
+			top: 72%;
+			left: 35%;
+			font-size: 12px;
+			transform: rotate(180deg);
+		}
+
+		100% {
+			top: 4%;
+			left: 15%;
+		
+			font-size: 33px;
+			transform: rotate(29deg); 
+		}
+	}
+
+	.services-tags__item--tag-3 {
+		top: 77%;
+		left: 85%;
+	
+		font-size: 41px; 
+
+		transform: rotate(-22deg);
+
+		animation: tag_b-3 2s;
+	}
+
+	@keyframes tag_b-3{
+		0% {
+			top: 72%;
+			left: 20%;
+			font-size: 12px;
+			transform: rotate(180deg);
+		}
+
+		100% {
+			top: 77%;
+			left: 85%;
+		
+			font-size: 41px;
+			transform: rotate(-22deg); 
+		}
+}
+
+	.services-tags__item--tag-4 {
+		top: 83%;
+		left: 50%;
+	
+		font-size: 25px; 
+
+		transform: rotate(20deg);
+
+		animation: tag_b-4 2s;
+	}
+
+	@keyframes tag_b-4 {
+		0% {
+			top: 72%;
+			left: 25%;
+			font-size: 12px;
+			transform: rotate(180deg);
+		}
+
+		100% {
+			top: 83%;
+			left: 50%;
+		
+			font-size: 25px;
+			transform: rotate(20deg); 
+		}
+	}
+}
+
+@media (max-width: 720px) {
+	.services-tags__item--tag-1 {
+		display: none;
+	}
+
+	.services-tags__item--tag-2 {
+		display: none;
+	}
+
+	.services-tags__item--tag-3 {
+		display: none;
+	}
+
+	.services-tags__item--tag-4 {
+		display: none;
+	}
+
+	.services-tags__item--tag-5 {
+		display: none;
+	}
+}

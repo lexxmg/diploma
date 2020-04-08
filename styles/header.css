@@ -1,0 +1,332 @@
+.header {
+	position: relative;
+
+	padding: 0 60px;
+}
+
+.header__background {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+
+	width: 814px;
+	height: 630px;
+
+	background-image: url(../img/Ellipse_1.png);
+	background-origin: border-box;
+	background-repeat: no-repeat;
+	background-size: 940px 776px;
+	background-position: -11px -12px;
+}
+
+.header__top {
+	position: relative;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 30px 0;
+}
+
+.burger {
+	background: none;
+	background-image: url(../img/burger.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	border: none;
+	/*outline: none;*/
+
+	cursor: pointer;
+}
+
+.header__burger {
+	display: none;
+
+	width: 45px;
+	height: 32px;
+}
+
+.menu {
+
+}
+
+.header-top__menu {
+
+}
+
+.menu__list {
+	/*font-size: 0;*/
+}
+
+.menu__item {
+	display: inline-block;
+
+	margin-right: 25px;
+
+	border: 1px solid transparent;
+
+	font-size: 16px;
+	color: #1f1f24;
+}
+
+.menu__item:hover {
+	border-bottom: 1px solid #fc557c;
+
+	color:  #fc557c;
+}
+
+.header-top__inner {
+	/*margin-right: 10px;*/
+}
+
+.menu__link {
+
+}
+
+.header-top__link {
+	margin-right: 25px;
+
+	vertical-align: middle;
+
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.header-top__link:hover {
+	color: #f82370;
+}
+
+.header-section {
+	position: relative;
+}
+
+
+.header-section__container {
+
+} 
+
+.figure {
+
+}
+
+.header-section__figure {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding-top: 34px;
+	margin-right: -72px;
+}
+
+.figure__figcaption {
+	position: relative;
+	top: -50px;
+}
+
+.figure__hgroup {
+
+}
+
+.figure__title {
+	font-size: 80px;
+	font-weight: 900;
+}
+
+.figure__subtitle {
+	font-weight: 400;
+	font-size: 25px;
+	color: #8993ad;
+}
+
+.figure__button {
+/*	display: block;
+
+	width: 270px;
+	height: 60px;*/
+
+	margin-top: 45px;
+}
+
+.figure__picture {
+	min-width: 430px;
+	height: 630px;
+}
+
+.picture__img {
+	height: 100%;
+}
+
+@media (max-width: 1210px) {
+	.header {
+		padding: 0 40px;
+
+	}
+
+	.header-top__inner {
+	 margin: 0;
+	}
+
+	.header__background {
+		width: 556px;
+		height: 526px;
+
+		background-size: 940px 653px;
+		background-position: 0 -12px;
+	}
+
+	.header-top__menu {
+		display: none;
+		position: absolute;
+		top: 100px;
+		left: 0;
+		z-index: 10;
+		
+		padding: 20px;
+
+		background-color: white;
+
+		border: 1px solid  #fc557c;
+
+		box-shadow: 0 0 20px -10px;
+	}
+
+	.menu__item {
+		display: block;
+
+		margin: 0 0 30px;
+	}
+
+	.menu__item:last-child {
+		margin: 0;
+	} 
+
+	.header__burger {
+		display: block;
+	}
+
+	.header-top__link {
+		font-size: 25px;
+	}
+
+	.header-section__figure {
+		margin: 0;
+	}
+
+	.figure__hgroup {
+
+	}
+
+	.figure__figcaption {
+		top: -31px;
+	}
+
+	.figure__title {
+		font-size: 54px;
+	}
+
+	.figure__subtitle {
+		margin-top: 10px;
+	}
+
+	.figure__button {
+		width: 320px;
+		height: 68px;
+
+		margin-top: 43px;
+
+		/*line-height: 68px;*/
+	}
+}
+
+@media (max-width: 1009px) {
+	.header {
+		padding: 0 20px;
+
+	}
+
+	.header__burger {
+		width: 24px;
+		height: 18px;
+	}
+
+	.header-top__menu {
+		top: 80px;
+		left: 0;
+	}	
+
+	.header-top__link {
+		margin: 0;
+
+		font-size: 16px;
+	}
+
+	.header-top__button {
+		display: none;
+	}
+
+	.header-top__btn-mob {
+		display: block;
+
+		padding: 2px 5px;
+	}
+
+	.header__background {
+		bottom: initial;
+		top: 140px;
+
+		width: 100%;
+		height: 330px;
+
+		background-size: 587px 599px;
+		background-position: top 24px right -140px;
+	}
+
+	.header-section__figure {
+		margin-top: 20px;
+	}
+
+	.figure__figcaption {
+		position: relative;
+		top: 0;
+
+		margin-top: 10px;
+
+		text-align: center;
+	}
+
+	.figure__title {
+		font-size: 30px;
+	}
+
+	.figure__subtitle {
+		margin-top: 4px;
+
+		font-size: 16px;
+	}
+
+	.figure__button {
+		width: 280px;
+		height: 55px;
+
+		margin-top: 30px;
+	}
+
+	.figure__picture {
+		min-width: 220px;
+		height: 330px;
+	}
+}
+
+@media (max-width: 564px) {
+	.header-section__figure {
+		flex-direction: column-reverse;
+	}	
+
+	.figure__picture {
+		position: relative;
+		right: -7%;
+	}
+}

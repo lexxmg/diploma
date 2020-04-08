@@ -1,0 +1,343 @@
+.main {
+
+}
+
+.my-works {
+	/*padding: 0 60px;*/
+
+	background-color: white;
+}
+
+.my-works__container {
+	padding: 80px 0;
+}
+
+.my-works__title {
+	margin-bottom: 80px;
+
+	text-align: center;
+	font-size: 54px;
+	font-weight: 700;
+}
+
+.my-works__title-group {
+
+}
+
+.title-group {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	color: #8993ad;
+}
+
+.title-group__item {
+	width: 250px;
+
+	padding-top: 100px;
+
+	text-align: center;
+	font-weight: 400;
+}
+
+.title-group__item--layout {
+	background-image: url(../img/tools-and-utensils.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+.title-group__item--adaptive {
+	background-image: url(../img/responsive.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+.title-group__item--frontend {
+	background-image: url(../img/programming.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+.title-group__item--correct {
+	background-image: url(../img/coding.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+.my-worrks__btn	{
+	display: block;
+	margin: 94px auto 0;
+}	
+
+.examples {
+	padding: 0 60px;
+}
+
+.examples__container {
+
+}
+
+.examples__heading {
+	padding: 100px 0;
+
+	text-align: center;
+
+	font-size: 54px;
+	font-weight: 700;
+}
+
+.examples__slides {
+
+}
+
+.slide-container {
+	position: relative;
+
+	width: 100%;
+}
+
+.slide-container__figure {
+	
+}
+
+.slide-container__picture {
+	display: block;
+
+	/*width: 370px;*/
+	height: 290px;
+
+	/*border: 1px solid black;*/
+}
+
+.slide-container__img {
+  display: block;
+
+  /*width: 100%;*/
+	height: 100%;
+
+	object-fit: cover;
+}
+
+.slide-container__figcaption {
+
+}
+
+.slide-container__title {
+	margin-top: 30px;
+
+	text-align: center;
+}
+
+.slide-container__link {
+	font-size: 20px;
+	font-weight: 500;	
+	color: #8993ad;
+}
+
+.examples__btn {
+	display: block;
+	margin: 94px auto 102px;
+}
+
+.services {
+	position: relative;
+
+	background: linear-gradient(to right top, #ff8f5a, #ff2f96);
+}
+
+.services__container {
+	padding: 73px 113px 80px;
+
+	color: white;
+}
+
+.services__title {
+	font-size: 45px;
+	font-weight: 700;
+}
+
+.services__text {
+	display: block;
+	
+	margin-top: 26px;
+
+	font-size: 20px;
+}
+
+@media (max-width: 1210px) {
+	.my-works {
+		padding: 0 40px;
+	}
+
+	.my-works__title {
+		margin-bottom: 30px;
+	}
+
+	.title-group {
+		display: flex;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+	}	
+
+	.title-group__item {
+		margin: 50px 100px 0;
+
+		font-size: 20px;
+	}
+
+	.my-worrks__btn {
+		width: 320px;
+		height: 68px;
+
+		margin: 90px auto 0;
+
+		line-height: 68px;
+		font-weight: 500;
+	}
+
+	.examples {
+		padding: 0 40px;
+ 	}
+
+ 	.slide-container__picture {
+ 		height: 360px;
+ 	}
+
+ 	.examples__btn {
+ 		width: 320px;
+ 		height: 68px;
+
+ 		margin: 84px auto 102px;
+ 	}
+
+	.services__container {
+		padding: 77px 35px;
+	}
+
+	.slide-container__title {
+		margin-top: 10px;
+	}
+
+	.slide-container__link {
+		font-size: 26px;
+	}
+
+	.services__title {
+
+	} 	 	 
+}
+
+@media (max-width: 1009px) {
+	.my-works__container {
+		padding: 0;
+	}
+
+	.my-works {
+		padding: 50px 20px;
+	}	
+		
+	.my-works__title {
+		font-size: 30px;
+		font-weight: 900;
+	}
+
+	.my-worrks__btn {
+		width: 280px;
+		height: 55px;
+
+		margin: 50px auto 0;
+
+		font-size: 16px;
+		line-height: 55px;
+		font-weight: 500;
+	}
+
+	.title-group {
+		/*display: flex;*/
+		/*flex-direction: column;*/
+	}	
+
+	.title-group__item {
+		margin: 50px 15px 0;
+
+		font-size: 20px;
+	}
+
+	.examples {
+		padding: 0 20px 50px;
+ 	}
+
+ 	.examples__heading {
+		padding: 40px 0;
+
+		font-size: 30px;
+		font-weight: 900;
+	}
+
+ 	.slide-container__picture {
+ 		height: 250px;
+ 	}
+
+ 	.slide-container__title {
+		margin-top: 20px;
+	}
+
+	.slide-container__link {
+		font-size: 18px;
+	}
+
+	.examples__btn {
+ 		width: 280px;
+ 		height: 55px;
+
+ 		margin: 45px auto 0;
+
+ 		font-size: 16px;
+ 		line-height: 55px;
+ 	}
+
+ 	.services__container {
+		padding: 50px 20px;
+	}
+
+	.services__title {
+		font-size: 28px;
+	}
+
+	.services__text {
+		margin-top: 45px;
+	} 	 	 	
+}
+
+@media (max-width: 564px) {
+	.title-group__item {
+		padding-top: 80px;
+  	margin: 0 15px 45px;
+
+  	background-size: 60px;
+
+  	font-size: 16px;
+  }
+	
+	.my-worrks__btn {
+		margin: 7px auto 0;
+	}
+
+	.slide-container__title {
+    margin-top: 10px;
+	}
+
+	.examples__btn {
+		margin: 40px auto 0;
+	}
+
+	.services__container {
+    padding: 40px 20px 70px;
+	}
+
+	.services__text {
+    margin-top: 40px;
+    font-size: 15px;
+	} 
+}
