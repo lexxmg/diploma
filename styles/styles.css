@@ -12,6 +12,9 @@ html {
 }
 
 body {
+  overflow: hidden;
+
+  width: 100%;
   min-width: 320px;               /* box-model */
   margin: 0;
 

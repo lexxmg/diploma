@@ -37,6 +37,7 @@
 		
 		<link rel="stylesheet" href="styles/normalize.css">
 		<link rel="stylesheet" href="styles/styles.css">
+		<link rel="stylesheet" href="styles/modal.css">
 		<link rel="stylesheet" href="styles/button.css">
 		<link rel="stylesheet" href="styles/header.css">
 		<link rel="stylesheet" href="styles/main.css">
@@ -49,6 +50,20 @@
 	</head>
 	
 	<body>
+		<div class="modal">
+			<form class="modal__form form">
+				<label class="form__label">Введите имя*
+					<input class="form__input" type="text" name="nik" placeholder="Ф.И.О" required>
+				</label>
+
+				<label class="form__label">Введите номер*
+					<input class="form__input" type="tel" name="tel" placeholder="+7 (000) 00 00 00" required>
+				</label>
+
+				<button class="modal__btn button" title="submit">Отправить</button>
+			</form>
+		</div>
+
 		<header class="header">
 			<div class="header__background">
 					<!-- <img class="logo-container-background__img" src="img/Ellipse_1.png" alt=""> -->
