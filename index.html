@@ -37,6 +37,7 @@
 		
 		<link rel="stylesheet" href="styles/normalize.css">
 		<link rel="stylesheet" href="styles/styles.css">
+		<link rel="stylesheet" href="styles/modal.css">
 		<link rel="stylesheet" href="styles/button.css">
 		<link rel="stylesheet" href="styles/header.css">
 		<link rel="stylesheet" href="styles/main.css">
@@ -49,11 +50,38 @@
 	</head>
 	
 	<body>
-		<header class="header">
-			<div class="header__background">
-					<!-- <img class="logo-container-background__img" src="img/Ellipse_1.png" alt=""> -->
-			</div>
+		<div class="modal">
+			<form class="modal__form form">
+				<div class="modal__inner">
+					<label class="form__label">Введите имя*
+						<input class="form__input" type="text" name="nik" placeholder="Ф.И.О" required>
+					</label>
+			  </div>
 
+			  <div class="modal__inner">
+					<label class="form__label">Введите номер*
+						<input class="form__input" type="tel" name="tel" placeholder="+7 (000) 00 00 00" required>
+					</label>
+				</div>	
+
+				<div class="modal__inner modal__inner--hidden">
+					<label class="form__label">Введите mail*
+						<input class="form__input" type="mail" name="mail" placeholder="ivanov@mail.ru" required>
+					</label>
+				</div>	
+
+				<div class="modal__inner modal__inner--hidden">
+					<label class="form__label">Задайте вопросc
+						<textarea class="form__textatea" type="text" name="text"></textarea>
+					</label>
+				</div>	
+
+				<button class="modal__btn button" title="submit">Отправить</button>
+			</form>
+		</div>
+
+		<header class="header">
+			<div class="header__background"></div>
 
 			<div class="header__top fixed-container">
 				<button class="burger header__burger js-burger"
