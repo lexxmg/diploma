@@ -5,7 +5,11 @@ $(function() {
         btn = $(".js-burger"),
         popUpMenu = $(".js-menu"),
         callBtn = $('.js-call'),
-        modal = $('.js-modal');
+        askBtn = $('.js-ask'),
+        orderBtn = $('.js-order'),
+        modal = $('.js-modal'),
+        modalMail = $('.js-modal__mail'),
+        modalText = $('.js-modal__text');
 
 
   btn.on('click', function(){
@@ -25,9 +29,39 @@ $(function() {
     body.css('overflow', 'hidden');
   });
 
+  askBtn.on('click', function(){
+    modal.removeClass('modal--hidden');
+    if(modalMail.css('display') == 'none') {
+      modalMail.css('display', 'block');
+    }
+  
+    body.css('overflow', 'hidden');
+  });
+
+  orderBtn.on('click', function(){
+    modal.removeClass('modal--hidden');
+    if(modalMail.css('display') == 'none') {
+      modalMail.css('display', 'block');
+    }
+
+    if(modalText.css('display') == 'none') {
+      modalText.css('display', 'block');
+    }
+  
+    body.css('overflow', 'hidden');
+  });
+
   modal.on('click', function(){
     modal.addClass('modal--hidden');
     body.removeAttr('style');
+
+    if(modalMail.css('display') == 'block') {
+      modalMail.css('display', 'none');
+    }
+
+    if(modalText.css('display') == 'block') {
+      modalText.css('display', 'none');
+    }
   });
 
   /*

@@ -37,6 +37,7 @@
 		
 		<link rel="stylesheet" href="styles/normalize.css">
 		<link rel="stylesheet" href="styles/styles.css">
+		<link rel="stylesheet" href="styles/animation.css">
 		<link rel="stylesheet" href="styles/modal.css">
 		<link rel="stylesheet" href="styles/button.css">
 		<link rel="stylesheet" href="styles/header.css">
@@ -51,7 +52,7 @@
 	
 	<body>
 		<div class="modal modal--hidden js-modal">
-			<form class="modal__form form">
+			<form class="modal__form form animated bounceInDown">
 				<div class="modal__inner">
 					<label class="form__label">Введите имя*
 						<input class="form__input" type="text" name="nik" placeholder="Ф.И.О" required>
@@ -64,13 +65,13 @@
 					</label>
 				</div>	
 
-				<div class="modal__inner modal__inner--hidden">
+				<div class="modal__inner js-modal__mail">
 					<label class="form__label">Введите mail*
 						<input class="form__input" type="mail" name="mail" placeholder="ivanov@mail.ru" required>
 					</label>
 				</div>	
 
-				<div class="modal__inner modal__inner--hidden">
+				<div class="modal__inner js-modal__text">
 					<label class="form__label">Задайте вопросc
 						<textarea class="form__textatea" type="text" name="text"></textarea>
 					</label>
@@ -136,7 +137,7 @@
 								<h2 class="figure__subtitle">Frontend-разработчик и&nbsp;веб-верстальщик</h2>
 							</hgroup>
 							
-							<button class="button button--big figure__button">Узнать больше</button>
+							<button class="button button--big figure__button js-ask">Узнать больше</button>
 						</figcaption>
 					
 						<picture class="picture figure__picture">
@@ -170,7 +171,7 @@
 						</h3>
 					</hgroup>
 					
-					<button class="button button--big my-worrks__btn">Узнать стоимость</button>
+					<button class="button button--big my-worrks__btn js-ask">Узнать стоимость</button>
 				</div>
 			</section>
 
@@ -246,7 +247,7 @@
 						</div>
 					</section>
 
-					<button class="button button--big examples__btn">Заказать проект</button>
+					<button class="button button--big examples__btn js-order">Заказать проект</button>
 				</div>
 			</section>
 
