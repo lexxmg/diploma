@@ -1,9 +1,11 @@
 $(function() {
-  // Owl Carousel
+ 
   const owl = $(".owl-carousel"),
-        body = $("body");
+        body = $("body"),
         btn = $(".js-burger"),
-        popUpMenu = $(".js-menu");
+        popUpMenu = $(".js-menu"),
+        callBtn = $('.js-call'),
+        modal = $('.js-modal');
 
 
   btn.on('click', function(){
@@ -16,8 +18,19 @@ $(function() {
         btn.attr("aria-expanded", "false");
       }); 
     }
-  }); 
+  });
 
+  callBtn.on('click', function(){
+    modal.removeClass('modal--hidden');
+    body.css('overflow', 'hidden');
+  });
+
+  modal.on('click', function(){
+    modal.addClass('modal--hidden');
+    body.removeAttr('style');
+  });
+
+  /*
   body.on('click', function(event){
     if(btn.attr("aria-expanded") == "true") {
       popUpMenu.slideUp(function(){
@@ -26,7 +39,7 @@ $(function() {
     }
     console.log(event.target);
   });     
-  
+  */
 
   owl.owlCarousel({
     items: 3,
