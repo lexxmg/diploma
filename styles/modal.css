@@ -2,6 +2,14 @@
 
 }
 
+.js-modal__mail {
+	display: none;
+}
+
+.js-modal__text {
+	display: none;
+}
+
 .modal__inner--hidden {
 	display: none;
 }
