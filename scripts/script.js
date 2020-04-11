@@ -51,16 +51,18 @@ $(function() {
     body.css('overflow', 'hidden');
   });
 
-  modal.on('click', function(){
-    modal.css('display', 'none');
-    body.css('overflow', 'auto');
+  modal.on('click', function(event){
+    if (event.target == this) {
+      modal.css('display', 'none');
+      body.css('overflow', 'auto');
 
-    if(modalMail.css('display') == 'block') {
-      modalMail.css('display', 'none');
-    }
+      if(modalMail.css('display') == 'block') {
+        modalMail.css('display', 'none');
+      }
 
-    if(modalText.css('display') == 'block') {
-      modalText.css('display', 'none');
+      if(modalText.css('display') == 'block') {
+        modalText.css('display', 'none');
+      }
     }
   });
 
