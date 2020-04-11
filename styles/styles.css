@@ -12,6 +12,8 @@ html {
 }
 
 body {
+  overflow: auto;
+
   width: 100%;
   min-width: 320px;               /* box-model */
   margin: 0;

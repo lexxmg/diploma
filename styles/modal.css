@@ -1,24 +1,10 @@
-.modal__inner {
-
-}
-
-.js-modal__mail {
-	display: none;
-}
-
-.js-modal__text {
-	display: none;
-}
-
-.modal__inner--hidden {
-	display: none;
-}
 
 .modal {
+	display: none;
+	
 	position: fixed;
 	z-index: 20;
 
-	display: flex;
 	justify-content: center;
 	align-items: center;
 
@@ -69,6 +55,22 @@
 	margin: 10px 0 20px 0;
 
 	resize: none;
+}
+
+.modal__inner {
+
+}
+
+.js-modal__mail {
+	display: none;
+}
+
+.js-modal__text {
+	display: none;
+}
+
+.modal__inner--hidden {
+	display: none;
 }
 
 .modal__btn {

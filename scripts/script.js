@@ -25,12 +25,12 @@ $(function() {
   });
 
   callBtn.on('click', function(){
-    modal.removeClass('modal--hidden');
+    modal.css('display', 'flex');
     body.css('overflow', 'hidden');
   });
 
   askBtn.on('click', function(){
-    modal.removeClass('modal--hidden');
+    modal.css('display', 'flex');
     if(modalMail.css('display') == 'none') {
       modalMail.css('display', 'block');
     }
@@ -39,7 +39,7 @@ $(function() {
   });
 
   orderBtn.on('click', function(){
-    modal.removeClass('modal--hidden');
+    modal.css('display', 'flex');
     if(modalMail.css('display') == 'none') {
       modalMail.css('display', 'block');
     }
@@ -52,8 +52,8 @@ $(function() {
   });
 
   modal.on('click', function(){
-    modal.addClass('modal--hidden');
-    body.removeAttr('style');
+    modal.css('display', 'none');
+    body.css('overflow', 'auto');
 
     if(modalMail.css('display') == 'block') {
       modalMail.css('display', 'none');
