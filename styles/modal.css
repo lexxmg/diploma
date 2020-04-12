@@ -45,7 +45,14 @@
 	width: 100%;
 	height: 50px;
 
+	padding: 0 10px;
 	margin: 10px 0 20px 0;
+
+	border: 1px solid #f82370;
+}
+
+.form__input:focus {
+	outline: 3px solid #f82370;
 }
 
 .form__textatea {
@@ -54,7 +61,13 @@
 
 	margin: 10px 0 20px 0;
 
+	border: 1px solid #f82370;
+
 	resize: none;
+}
+
+.form__textatea:focus {
+	outline: 3px solid #f82370;
 }
 
 .modal__inner {
