@@ -9,9 +9,10 @@ $(function() {
         orderBtn = $('.js-order'),
         submitBtn = $('.js-submit'),
         form = $('.modal__form'),
-        modal = $('.js-modal')
-        modalMail = $('.js-modal__mail'),
-        modalText = $('.js-modal__text');
+        modal = $('.modal'),
+        modalCall = $('.js-modal-call'),
+        modalAsk = $('.js-modal-ask'),
+        modalOrder = $('.js-modal-order');
 
 
   btn.on('click', function(){
@@ -27,46 +28,28 @@ $(function() {
   });
 
   callBtn.on('click', function(){
-    modal.css('display', 'flex');
-    body.css('overflow', 'hidden');
+    modalCall.fadeIn('200', function(){
+      body.css('overflow', 'hidden');
+    });
   });
 
   askBtn.on('click', function(){
-    modal.css('display', 'flex');
-    if(modalMail.css('display') == 'none') {
-      modalMail.css('display', 'block');
-    }
-  
-    body.css('overflow', 'hidden');
+    modalAsk.fadeIn('200', function(){
+      body.css('overflow', 'hidden');
+    });
   });
 
   orderBtn.on('click', function(){
-    modal.css('display', 'flex');
-    if(modalMail.css('display') == 'none') {
-      modalMail.css('display', 'block');
-    }
-
-    if(modalText.css('display') == 'none') {
-      modalText.css('display', 'block');
-    }
-  
-    body.css('overflow', 'hidden');
+    modalOrder.fadeIn('200', function(){
+      body.css('overflow', 'hidden');
+    });
   });
 
   function modalClose(){
-    modal.css('display', 'none');
-    body.css('overflow', 'auto');
-
-    if(modalMail.css('display') == 'block') {
-      modalMail.css('display', 'none');
-    }
-
-    if(modalText.css('display') == 'block') {
-      modalText.css('display', 'none');
-    }
-
-    $('.form__input[name=tel]').val('');
-    $('.form__input[name=nik]').val('')
+    modal.fadeOut('200', function(){
+      body.css('overflow', 'auto');
+    });
+    $('[name]').val('');
   } 
 
   modal.on('click', function(event){
@@ -77,36 +60,46 @@ $(function() {
 
   form.on('submit', function(event){
     event.preventDefault();
+    console.log(this);
     console.log($(this).serialize());
-    console.log($(this).serializeArray()[1].value);
-    console.log($('.form__input[name=tel]').val());
-    console.log($('.form__input[name=nik]').val());
 
-    $.get(
-      $(this).attr('action'),
-      $(this).serialize(),
-      function(data){
-        if(data == '') {
-          alert('Ошибка сервера, повторите попытку позже');
-          modalClose();
-        } else {
-          alert(data);
-          modalClose();
-        }  
-      }
-    )
-  });
-  /*
-  body.on('click', function(event){
-    if(btn.attr("aria-expanded") == "true") {
-      popUpMenu.slideUp(function(){
-        btn.attr("aria-expanded", "false");
-      });
+    let arrData = $(this).serializeArray();
+
+    for(let i = 0; i < arrData.length; i++){
+      console.log(arrData[i].name + '=' + arrData[i].value);
     }
-    console.log(event.target);
-  });     
-  */
 
+    if($(this).attr('method') == 'post') {
+      $.post(
+        $(this).attr('action'),
+        $(this).serialize(),
+        function(data, stat){
+          console.log(stat);
+          if(stat != 'success') {
+            alert('Ошибка сервера, повторите попытку позже');
+            modalClose();
+          } else {
+            alert(data);
+            modalClose();
+          }  
+      });
+    } else {
+      $.get(
+        $(this).attr('action'),
+        $(this).serialize(),
+        function(data, stat){
+          console.log(stat);
+          if(stat != 'success') {
+            alert('Ошибка сервера, повторите попытку позже');
+            modalClose();
+          } else {
+            alert(data);
+            modalClose();
+          }  
+      });
+    } 
+  });
+ 
   owl.owlCarousel({
     items: 3,
     margin: 30,

@@ -43,10 +43,15 @@
 
 	line-height: 60px;
 	font-size: 25px;
+	font-style: normal;
 }
 
 .footer-contacts__list {
 	
+}
+
+.footer-contacts__item {
+
 }
 
 .footer-contacts__tel {
@@ -80,6 +85,10 @@
 
 }
 
+.footer-links__address {
+
+}
+
 .footer-links__item {
 	display: inline-block;
   
@@ -110,6 +119,7 @@
 
 .footer-links__button {
 	/*display:	block;*/
+	margin: 7px 21px 30px 0;
 
 	width: 250px;
 	height: 45px;
@@ -166,7 +176,7 @@
 		padding: 85px 40px 68px;
 	}
 
-	.footer-links__item--block {
+	.footer-links__button {
 		display: block;
 
 		margin: 12px 0 30px 0;
@@ -202,7 +212,7 @@
 		padding: 50px 20px;
 	}
 
-	.footer-contacts__list {
+	.footer-contacts__item {
 		color: #8993ad;
 	}
 
@@ -225,7 +235,7 @@
 		width: 280px;
 		height: 55px;
 
-		margin: 0 auto;
+		/*margin: 0 auto;*/
 
 		background-color: #f82370;
 
@@ -275,7 +285,7 @@
 		margin: 0;
 	}
 
-	.footer-links__item--block {
+	.footer-links__button {
     margin: 12px 0 45px 0;
 	}
 }

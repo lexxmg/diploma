@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-		<title>mySite</title>
+		<title>Дмитрий Алексеев</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -38,8 +38,8 @@
 		
 		<link rel="stylesheet" href="styles/normalize.css">
 		<link rel="stylesheet" href="styles/styles.css">
-		<link rel="stylesheet" href="styles/header.css">
 		<link rel="stylesheet" href="styles/button.css">
+		<link rel="stylesheet" href="styles/header.css">
 		<link rel="stylesheet" href="styles/main.css">
 		<link rel="stylesheet" href="styles/footer.css">
 		<link rel="stylesheet" href="styles/animate.css">
@@ -52,35 +52,64 @@
 	</head>
 	
 	<body>
-		<div class="modal js-modal">
+		<div class="modal js-modal-call">
 			<form class="modal__form form animated bounceInDown"
 						action="https://echo.htmlacademy.ru">
+
+				<label class="form__label">Введите имя*
+					<input class="form__input" type="text" name="user" placeholder="Ф.И.О" required>
+				</label>
 				
-				<div class="modal__inner">
-					<label class="form__label">Введите имя*
-						<input class="form__input" type="text" name="nik" placeholder="Ф.И.О" required>
-					</label>
-			  </div>
+				<label class="form__label">Введите номер*
+					<input class="form__input" type="tel" name="tel" placeholder="+7 (000) 00 00 00" required>
+				</label>
 
-			  <div class="modal__inner">
-					<label class="form__label">Введите номер*
-						<input class="form__input" type="tel" name="tel" placeholder="+7 (000) 00 00 00" required>
-					</label>
-				</div>	
+				<button class="form__btn button js-submit">Отправить</button>
+			</form>
+		</div>
 
-				<div class="modal__inner js-modal__mail">
-					<label class="form__label">Введите mail*
-						<input class="form__input" type="email" name="mail" placeholder="ivanov@mail.ru">
-					</label>
-				</div>	
+		<div class="modal js-modal-ask">
+			<form class="modal__form form animated bounceInDown"
+						action="https://echo.htmlacademy.ru">
 
-				<div class="modal__inner js-modal__text">
-					<label class="form__label">Задайте вопросc
-						<textarea class="form__textatea" name="text"></textarea>
-					</label>
-				</div>	
+				<label class="form__label">Введите имя*
+					<input class="form__input" type="text" name="user" placeholder="Ф.И.О" required>
+				</label>
+				
+				<label class="form__label">Введите номер*
+					<input class="form__input" type="tel" name="tel" placeholder="+7 (000) 00 00 00" required>
+				</label>
 
-				<button class="modal__btn button" title="submit js-submit">Отправить</button>
+				<label class="form__label">Введите mail*
+						<input class="form__input" type="email" name="mail" placeholder="ivanov@mail.ru" required>
+				</label>
+
+				<button class="form__btn button js-submit">Отправить</button>
+			</form>
+		</div>
+
+		<div class="modal js-modal-order">
+			<form class="modal__form modal__form--position form animated bounceInDown"
+						action="https://echo.htmlacademy.ru"
+						method="post">
+
+				<label class="form__label">Введите имя*
+					<input class="form__input" type="text" name="user" placeholder="Ф.И.О" required>
+				</label>
+				
+				<label class="form__label">Введите номер*
+					<input class="form__input" type="tel" name="tel" placeholder="+7 (000) 00 00 00" required>
+				</label>
+
+				<label class="form__label">Введите mail*
+					<input class="form__input" type="email" name="mail" placeholder="ivanov@mail.ru" required>
+				</label>
+
+				<label class="form__label">Задайте вопросc
+					<textarea class="form__textatea" name="text"></textarea>
+				</label>
+
+				<button class="form__btn button js-submit">Отправить</button>
 			</form>
 		</div>
 
@@ -285,49 +314,69 @@
 					<li class="footer-nav__item"><a class="footer-nav__link" href="#cost">Стоимость</a></li>
 				</ul>
 
-				<ul class="footer__contacts footer-contacts">
-					<li class="footer-contacts__list">
-						<a class="footer-contacts__tel" href="tel:84999957755">
-							<span class="footer-contacts__icon icofont-phone" aria-label="телефон"></span>
+				<address class="footer__contacts footer-contacts">
+					<ul class="footer-contacts__list">
+						<li class="footer-contacts__item">
+							<a class="footer-contacts__tel" href="tel:84999957755">
+								<span class="footer-contacts__icon icofont-phone"></span>
 
-							+7 (499) 995-77-55
-						</a>
-					</li>
+								+7 (499) 995-77-55
+							</a>
+						</li>
 					
-					<li class="footer-contacts__list">
-						<a class="footer-contacts__mail" href="mailto:dmitry@alekseev.com">
-							<span class="footer-contacts__icon icofont-email" aria-label="почта"></span>
+						<li class="footer-contacts__item">
+							<a class="footer-contacts__mail" href="mailto:dmitry@alekseev.com">
+								<span class="footer-contacts__icon icofont-email"></span>
 
-							dmitry@alekseev.com
-						</a>
-					</li>
-				</ul>
+								dmitry@alekseev.com
+							</a>
+						</li>
+					</ul>
+				</address>
 
-				<ul class="footer__links footer-links">
-					<li class="footer-links__item footer-links__item--block">
-						<button class="button footer-links__button js-call">Заказать звонок</button>
-					</li>
+				<div class="footer__links footer-links">
+					<button class="button footer-links__button js-call">Заказать звонок</button>
+
+					<address class="footer-links__address">
+						<ul class="footer-links__list">
+							<li class="footer-links__item">
+								<a class="footer-links__link footer-links__link--vk"
+										href="https://vk.com/about"
+										target="_blank" 
+										aria-label="в контакте">	
+								</a>
+							</li>
 					
-					<li class="footer-links__item">
-						<a class="footer-links__link footer-links__link--vk"  href="#" aria-label="в контакте"></a>
-					</li>
+							<li class="footer-links__item">
+								<a class="footer-links__link footer-links__link--f"
+										href="https://www.facebook.com/watch/live/?ref=live_delegate"
+										target="_blank" 
+										aria-label="фейсбук">			
+								</a>
+							</li>
 					
-					<li class="footer-links__item">
-						<a class="footer-links__link footer-links__link--f" href="#" aria-label="фейсбук"></a>
-					</li>
+							<li class="footer-links__item">
+								<a class="footer-links__link footer-links__link--t"
+									href="https://twitter.com/ru"
+									target="_blank" 
+									aria-label="твитер">		
+								</a>
+							</li>
 					
-					<li class="footer-links__item">
-						<a class="footer-links__link footer-links__link--t" href="#" aria-label="твитер"></a>
-					</li>
-					
-					<li class="footer-links__item">
-						<a class="footer-links__link footer-links__link--i" href="#" aria-label="инстаграм"></a>
-					</li>
-				</ul>
+							<li class="footer-links__item">
+								<a class="footer-links__link footer-links__link--i"
+									href="https://www.instagram.com/?hl=ru"
+									target="_blank" 
+									aria-label="инстаграм">
+								</a>
+							</li>
+						</ul>
+					</address>
+				</div>
 			</div>
 
 			<div class="footer__black-bar">
-				<span class="footer__text">&copy; Дмитрий Алексеев, 2016 – 2018</span>
+				<small class="footer__text">&copy; Дмитрий Алексеев, 2016 – 2018</small>
 			</div>
 		</footer>
 
