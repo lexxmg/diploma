@@ -30,25 +30,6 @@
 	padding: 30px 0;
 }
 
-.burger {
-	background: none;
-	background-image: url(../img/burger.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-
-	border: none;
-	/*outline: none;*/
-
-	cursor: pointer;
-}
-
-.header__burger {
-	display: none;
-
-	width: 45px;
-	height: 32px;
-}
-
 .menu {
 
 }
@@ -209,10 +190,6 @@
 		margin: 0;
 	} 
 
-	.header__burger {
-		display: block;
-	}
-
 	.header-top__link {
 		font-size: 25px;
 	}
@@ -251,11 +228,6 @@
 	.header {
 		padding: 0 20px;
 
-	}
-
-	.header__burger {
-		width: 24px;
-		height: 18px;
 	}
 
 	.header-top__menu {
