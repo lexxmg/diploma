@@ -82,6 +82,12 @@
 	/*margin-right: 10px;*/
 }
 
+.header-top__address {
+	display: inline-block;
+
+	font-style: normal;
+} 
+
 .menu__link {
 
 }
