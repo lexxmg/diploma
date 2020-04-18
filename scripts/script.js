@@ -33,6 +33,17 @@ $(function() {
     }
   });
 
+  body.on('click', function(){
+    if(btn.attr('aria-expanded') == 'true') {
+      popUpMenu.slideUp(function(){
+        btn.attr("aria-expanded", "false");
+        $('.burger__item--center').removeClass('burger__item--center-a');
+        $('.burger__item--top').removeClass('burger__item--top-a');
+        $('.burger__item--bottom').removeClass('burger__item--bottom-a');
+      });
+    }
+  });
+
   callBtn.on('click', function(){
     modalCall.fadeIn('200', function(){
       body.css('overflow', 'hidden');
