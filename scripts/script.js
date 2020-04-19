@@ -19,16 +19,12 @@ $(function() {
     if(btn.attr("aria-expanded") == "false") {
       popUpMenu.slideDown(function(){
         btn.attr("aria-expanded", "true");
-        $('.burger__item--center').addClass('burger__item--center-a');
-        $('.burger__item--top').addClass('burger__item--top-a');
-        $('.burger__item--bottom').addClass('burger__item--bottom-a');
+        $('.burger__item').addClass('burger--animate');
       });
     } else {
       popUpMenu.slideUp(function(){
         btn.attr("aria-expanded", "false");
-        $('.burger__item--center').removeClass('burger__item--center-a');
-        $('.burger__item--top').removeClass('burger__item--top-a');
-        $('.burger__item--bottom').removeClass('burger__item--bottom-a');
+        $('.burger__item').removeClass('burger--animate');
       }); 
     }
   });
@@ -37,9 +33,7 @@ $(function() {
     if(btn.attr('aria-expanded') == 'true') {
       popUpMenu.slideUp(function(){
         btn.attr("aria-expanded", "false");
-        $('.burger__item--center').removeClass('burger__item--center-a');
-        $('.burger__item--top').removeClass('burger__item--top-a');
-        $('.burger__item--bottom').removeClass('burger__item--bottom-a');
+        $('.burger__item').removeClass('burger--animate');
       });
     }
   });
