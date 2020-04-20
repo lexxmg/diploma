@@ -8,6 +8,7 @@ $(function() {
         askBtn = $('.js-ask'),
         orderBtn = $('.js-order'),
         submitBtn = $('.js-submit'),
+        modalCloseBtn = $('.js-btn-close'),
         form = $('.modal__form'),
         modal = $('.modal'),
         modalCall = $('.js-modal-call'),
@@ -61,7 +62,9 @@ $(function() {
       body.css('overflow', 'auto');
     });
     $('[name]').val('');
-  } 
+  }
+
+  modalCloseBtn.on('click', modalClose); 
 
   modal.on('click', function(event){
     if (event.target == this) {
