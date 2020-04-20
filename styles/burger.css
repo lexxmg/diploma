@@ -22,8 +22,9 @@
 	width: 45px;
 	height: 6px;
 
-	background: linear-gradient(to right top, #FF695F, #FF397F);
-	transition: background 0s 2s;
+	/*background: linear-gradient(to right top, #FF695F, #FF397F);*/
+	background-color: #FF397F;
+	transition: background-color .4s .6s;
 }
 
 .burger__item::after {
@@ -59,7 +60,9 @@
 }
 
 .burger--animate {
-	background: none;
+	background-color: transparent;
+
+	transition: background-color .15s 0s;
 }
 
 .burger--animate::after {
@@ -70,7 +73,7 @@
 	left: 0;
 
 	transform: rotate(45deg);
-	transition: top .4s .1s, transform .4s .4s;
+	transition: top .4s .15s, transform .4s .4s;
 }
 
 .burger--animate::before {
@@ -83,7 +86,7 @@
 	background: linear-gradient(to right top, #FF3F7B, #FF298B);
 
 	transform: rotate(-45deg);
-	transition: top .4s .1s, transform .4s .4s;
+	transition: top .4s .15s, transform .4s .4s;
 }
 
 @media (max-width: 1210px) {
@@ -119,12 +122,10 @@
 
 	.burger--animate::after {
 		top: 0;
-		left: 0;
 	}
 
 	.burger--animate::before {
 		top: 0;
-		left: 0;
 	}
 
 }	
