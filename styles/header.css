@@ -1,7 +1,7 @@
 .header {
 	position: relative;
 
-	padding: 0 60px;
+	padding: 105px 60px 0;
 }
 
 .header__background {
@@ -20,11 +20,20 @@
 	background-position: -11px -12px;
 }
 
+.header__top-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+
+	width: 100%;
+
+	background-color: #f9f9f9;
+}
+
 .header__top {
 	position: relative;
-	position: fixed;
-	z-index: 50;
-
+	
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -150,8 +159,12 @@
 
 @media (max-width: 1210px) {
 	.header {
-		padding: 0 40px;
+		padding: 105px 40px 0;
 
+	}
+
+	.header__top-container {
+		padding: 0 40px;
 	}
 
 	.header-top__inner {
@@ -228,8 +241,11 @@
 
 @media (max-width: 1009px) {
 	.header {
-		padding: 0 20px;
+		padding: 85px 20px 0;
+	}
 
+	.header__top-container {
+		padding: 0 20px;
 	}
 
 	.header-top__menu {

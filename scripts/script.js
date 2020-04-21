@@ -117,6 +117,7 @@ $(function() {
   $('.js-nav').on('click', function(event){
     event.preventDefault();
 
+    let heightTopBar = $('.header__top-container').outerHeight();
     let href = $(this).attr('href');
     let offset = $(href).offset().top;
 
@@ -125,7 +126,7 @@ $(function() {
 
     console.log(offset);
 
-    body.animate({scrollTop: offset}, 700);
+    body.animate({scrollTop: offset - heightTopBar}, 700);
     //$('.header__top').animate({top: offset});
   });
  
