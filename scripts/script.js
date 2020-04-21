@@ -1,7 +1,7 @@
 $(function() {
  
   const owl = $(".owl-carousel"),
-        body = $("body"),
+        body = $("body,html"),
         btn = $(".js-burger"),
         popUpMenu = $(".js-menu"),
         callBtn = $('.js-call'),
@@ -112,6 +112,21 @@ $(function() {
           }  
       });
     } 
+  });
+
+  $('.js-nav').on('click', function(event){
+    event.preventDefault();
+
+    let href = $(this).attr('href');
+    let offset = $(href).offset().top;
+
+    console.log(href);
+    console.log($(href));
+
+    console.log(offset);
+
+    body.animate({scrollTop: offset}, 700);
+    //$('.header__top').animate({top: offset});
   });
  
   owl.owlCarousel({

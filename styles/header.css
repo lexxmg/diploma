@@ -22,6 +22,8 @@
 
 .header__top {
 	position: relative;
+	position: fixed;
+	z-index: 50;
 
 	display: flex;
 	justify-content: space-between;
