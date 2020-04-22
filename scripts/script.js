@@ -129,6 +129,9 @@ $(function() {
     } 
   });
 
+  $.mask.definitions['~']='[78]';
+  $('[type=tel]').mask("+~ (999) 999-99-99");
+
   $('.js-nav').on('click', function(event){
     event.preventDefault();
 
