@@ -15,6 +15,21 @@ $(function() {
         modalAsk = $('.js-modal-ask'),
         modalOrder = $('.js-modal-order');
 
+  function autoPadding(){
+    let topBarHeight = $('.header__top-container').outerHeight();
+    let headerPadding = $('.header').css('padding-left');
+  
+    $('.header__top-container')
+      .addClass('header__top-container--fixed')
+      .css('padding-right', headerPadding)
+      .css('padding-left', headerPadding);
+
+    $('.header').css('padding-top', topBarHeight);  
+  }
+
+  autoPadding();
+
+  $(window).resize(autoPadding);
 
   btn.on('click', function(){
     if(btn.attr("aria-expanded") == "false") {
