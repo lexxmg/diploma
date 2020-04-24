@@ -3,6 +3,8 @@ $(function() {
   const owl = $(".owl-carousel"),
         body = $("body,html"),
         btn = $(".js-burger"),
+        header = $('.header'),
+        headerTop = $('.header__top-container'),
         popUpMenu = $(".js-menu"),
         callBtn = $('.js-call'),
         askBtn = $('.js-ask'),
@@ -16,15 +18,15 @@ $(function() {
         modalOrder = $('.js-modal-order');
 
   function autoPadding(){
-    let topBarHeight = $('.header__top-container').outerHeight();
-    let headerPadding = $('.header').css('padding-left');
+    let topBarHeight = headerTop.outerHeight();
+    let headerPadding = header.css('padding-left');
   
-    $('.header__top-container')
+    headerTop
       .addClass('header__top-container--fixed')
       .css('padding-right', headerPadding)
       .css('padding-left', headerPadding);
 
-    $('.header').css('padding-top', topBarHeight);  
+    header.css('padding-top', topBarHeight);  
   }
 
   autoPadding();
