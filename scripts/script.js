@@ -77,7 +77,16 @@ $(function() {
       body.css('overflow', 'auto');
     });
     $('[name]').val('');
+    $('.modal__success').remove();
   }
+
+  function popupSuccess(text){
+    form.prepend(
+      `<div class="modal__success modal-success zoomIn animated">
+        <span class="modal-success__item">${text}</span>
+      </div>`
+    );
+  } 
 
   modalCloseBtn.on('click', modalClose); 
 
@@ -105,11 +114,14 @@ $(function() {
         function(data, stat){
           console.log(stat);
           if(stat != 'success') {
-            alert('Ошибка сервера, повторите попытку позже');
-            modalClose();
+            popupSuccess('Ошибка сервера, повторите попытку позже');
+            //alert('Ошибка сервера, повторите попытку позже');
+            //modalClose();
           } else {
-            alert(data);
-            modalClose();
+            popupSuccess('Ваш запросс отправлен');
+            setTimeout(modalClose, 3000);
+            //alert(data);
+            //modalClose();
           }  
       });
     } else {
@@ -119,11 +131,14 @@ $(function() {
         function(data, stat){
           console.log(stat);
           if(stat != 'success') {
-            alert('Ошибка сервера, повторите попытку позже');
-            modalClose();
+            popupSuccess('Ошибка сервера, повторите попытку позже');
+            //alert('Ошибка сервера, повторите попытку позже');
+            //modalClose();
           } else {
-            alert(data);
-            modalClose();
+            //alert(data);
+            //modalClose();
+            popupSuccess('Ваш запросс отправлен');
+            setTimeout(modalClose, 3000);
           }  
       });
     } 
