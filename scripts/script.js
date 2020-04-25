@@ -58,25 +58,25 @@ $(function() {
 
   callBtn.on('click', function(){
     modalCall.fadeIn('200', function(){
-      body.css('overflow', 'hidden');
+      body.addClass('off-scroll');
     });
   });
 
   askBtn.on('click', function(){
     modalAsk.fadeIn('200', function(){
-      body.css('overflow', 'hidden');
+      body.addClass('off-scroll');
     });
   });
 
   orderBtn.on('click', function(){
     modalOrder.fadeIn('200', function(){
-      body.css('overflow', 'hidden');
+      body.addClass('off-scroll');
     });
   });
 
   function modalClose(){
     modal.fadeOut('200', function(){
-      body.css('overflow', 'auto');
+      body.removeClass('off-scroll');
     });
     $('[name]').val('');
     $('.modal__success').remove();
@@ -112,36 +112,22 @@ $(function() {
     if($(this).attr('method') == 'post') {
       $.post(
         $(this).attr('action'),
-        $(this).serialize(),
-        function(data, stat){
-          console.log(stat);
-          if(stat != 'success') {
-            popupSuccess('Ошибка сервера, повторите попытку позже');
-            //alert('Ошибка сервера, повторите попытку позже');
-            //modalClose();
-          } else {
-            popupSuccess('Ваш запросс отправлен');
-            setTimeout(modalClose, 3000);
-            //alert(data);
-            //modalClose();
-          }  
-      });
+        $(this).serialize())
+      .fail(err => popupSuccess('Ошибка сервера, повторите попытку позже'))
+      .done(function(date){
+        popupSuccess('Ваш запросс отправлен');
+        alert(date);
+        setTimeout(modalClose, 3000);
+      });  
     } else {
       $.get(
         $(this).attr('action'),
-        $(this).serialize(),
-        function(data, stat){
-          console.log(stat);
-          if(stat != 'success') {
-            popupSuccess('Ошибка сервера, повторите попытку позже');
-            //alert('Ошибка сервера, повторите попытку позже');
-            //modalClose();
-          } else {
-            //alert(data);
-            //modalClose();
-            popupSuccess('Ваш запросс отправлен');
-            setTimeout(modalClose, 3000);
-          }  
+        $(this).serialize())
+      .fail(err => popupSuccess('Ошибка сервера, повторите попытку позже'))
+      .done(function(date){
+        popupSuccess('Ваш запросс отправлен');
+        alert(date);
+        setTimeout(modalClose, 3000);
       });
     } 
   });
