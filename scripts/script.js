@@ -116,7 +116,7 @@ $(function() {
       .fail(err => popupSuccess('Ошибка сервера, повторите попытку позже'))
       .done(function(date){
         popupSuccess('Ваш запросс отправлен');
-        alert(date);
+        //alert(date);
         setTimeout(modalClose, 3000);
       });  
     } else {
@@ -126,7 +126,7 @@ $(function() {
       .fail(err => popupSuccess('Ошибка сервера, повторите попытку позже'))
       .done(function(date){
         popupSuccess('Ваш запросс отправлен');
-        alert(date);
+        //alert(date);
         setTimeout(modalClose, 3000);
       });
     } 
@@ -136,7 +136,7 @@ $(function() {
   $('[type=tel]').mask("+~ (999) 999-99-99");
 
   $('.js-nav').on('click', function(event){
-    event.preventDefault();
+    //event.preventDefault();
 
     let heightTopBar = $('.header__top-container').outerHeight();
     let href = $(this).attr('href');
