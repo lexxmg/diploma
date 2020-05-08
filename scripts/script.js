@@ -136,7 +136,7 @@ $(function() {
   $('[type=tel]').mask("+~ (999) 999-99-99");
 
   $('.js-nav').on('click', function(event){
-    //event.preventDefault();
+    event.preventDefault();
 
     let heightTopBar = $('.header__top-container').outerHeight();
     let href = $(this).attr('href');
