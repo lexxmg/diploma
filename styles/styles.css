@@ -40,10 +40,6 @@ a {
   color: inherit;
 }
 
-a:active {
-  color: #ff8f00;
-}
-
 ul {
   list-style: none;
   padding: 0;

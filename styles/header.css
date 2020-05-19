@@ -86,6 +86,10 @@
 
 }
 
+.menu__link:active {
+  color: #ff8f00;
+}
+
 .header-top__link {
 	margin-right: 25px;
 
@@ -97,6 +101,10 @@
 
 .header-top__link:hover {
 	color: #f82370;
+}
+
+.header-top__link:active {
+	color: #ff8f00;
 }
 
 .header-section {
