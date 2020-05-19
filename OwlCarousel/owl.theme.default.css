@@ -80,6 +80,20 @@
   box-shadow: 0 0 10px #00000055;
 
   transform: rotate(180deg);
+
+  transition: box-shadow .2s;
+}
+
+.owl-prev:focus {
+  opacity: 1;
+}
+
+.owl-prev:active {
+  top: 116px;
+
+  box-shadow: 0 0 2px #000000;
+
+  transition: box-shadow .2s;
 }
 
 .owl-next {
@@ -104,6 +118,20 @@
   cursor: pointer;
 
   box-shadow: 0 0 10px #00000055;
+
+  transition: box-shadow .2s;
+}
+
+.owl-next:focus {
+  opacity: 1;
+}
+
+.owl-next:active {
+  top: 116px;
+
+  box-shadow: 0 0 2px #000000;
+
+  transition: box-shadow .2s;
 }
 
 @media (max-width: 1210px) {

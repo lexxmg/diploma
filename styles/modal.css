@@ -99,6 +99,30 @@
 	background-color: #f82370;
 }
 
+.btn-close:focus {
+	background-color: white;
+}
+
+.btn-close:focus .btn-close__item {
+	background-color: #f82370;
+}
+
+.btn-close:focus .btn-close__item::after {
+	background-color: #f82370;
+}
+
+.btn-close:active {
+	background-color: #f82370;
+}
+
+.btn-close:active .btn-close__item {
+	background-color: white;
+}
+
+.btn-close:active .btn-close__item::after {
+	background-color: white;
+}
+
 .modal__form {
 	position: relative;
 

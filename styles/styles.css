@@ -26,6 +26,9 @@ body {
   color: black;
 }
 
+button {
+  outline: none !important;
+}
 
 img {
   max-width: 100%;
@@ -35,6 +38,10 @@ img {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+a:active {
+  color: #ff8f00;
 }
 
 ul {

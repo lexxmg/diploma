@@ -7,8 +7,7 @@
 	background-color: transparent;
 
 	border: 1px solid #f82370;
-	outline: none;
-
+	
 	color: #f53f4f;
 
 	cursor: pointer;
@@ -24,6 +23,18 @@
 	transition: background-color .15s, color .15s;
 }
 
+.button:focus {
+	background-color: #f82370;
+
+	color: white;
+}
+
+.button:active {
+	background-color: transparent;
+
+	color: #f53f4f;
+}
+
 .btn-mob {
 	display: none;
 
@@ -34,7 +45,6 @@
 
 	border: 1px solid #f82370;
 	border-radius: 25px;
-	outline: none;
 
 	color: #f53f4f;
 
@@ -51,24 +61,51 @@
 	transition: background-color .15s, color .15s;
 }
 
-.button--big {
+.btn-mob:focus {
+	background-color: #f82370;
+
+	color: white;
+}
+
+.btn-mob:active {
+	background-color: white;
+
+	color: #f82370;
+}
+
+.button-big {
 	width: 270px;
 	height: 60px;
 
 	background-color: #ff4e2e;
 
+	border: 1px solid #ff4e2e;
+	
 	font-size: 18px;
 
 	color: white;
 
+	cursor: pointer;
+
 	transition: background-color .15s, border .15s, color .15s;
 }
 
-.button--big:hover {
+.button-big:hover {
 	background-color: transparent;
-	border: 1px solid #ff4e2e;
 
 	color: #ff4e2e;
 
 	transition: background-color .15s, border .15s, color .15s;
+}
+
+.button-big:focus {
+	background-color: transparent;
+
+	color: #ff4e2e;
+}
+
+.button-big:active {
+	background-color: #ff4e2e;
+
+	color: white;
 }
