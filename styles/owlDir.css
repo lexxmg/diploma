@@ -1,0 +1,103 @@
+.examples__form {
+	margin-bottom: 5px;
+}
+
+.form-dir {
+	padding: 5px 0;
+}
+
+.form-dir__label {
+	margin-left: 10px;
+}
+
+.form-dir__input {
+
+}
+
+.form-dir__btn {
+	display: none;
+
+	width: 150px;
+	height: 30px;
+
+	margin-left: 20px;
+
+	background-color: red;
+	border: 1px solid red;
+
+	color: white;
+}
+
+.form-dir__btn:hover {
+	background-color: white;
+
+	color: red;
+}
+
+.form-dir__btn:focus {
+	background-color: white;
+
+	color: red;
+}
+
+.form-dir__btn:active {
+	background-color: red;
+
+	color: white;
+}
+
+.owl-prev.dir {
+  position: absolute;
+  top: 115px;
+  right: 1130px;
+  z-index: 10;
+
+  width: 60px;
+  height: 60px;
+
+  background-color: white;
+  background-image: url(../img/arrow.png) !important;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border: none;
+  border-radius: 30px;
+ 
+  opacity: .6;
+
+  cursor: pointer;
+
+  box-shadow: 0 0 10px #00000055;
+
+  transform: rotate(360deg);
+
+  transition: box-shadow .2s, transform 1s, right 1.5s;
+}
+
+.owl-next.dir {
+  position: absolute;
+  top: 115px;
+	left: 1130px;
+  z-index: 10;
+
+  width: 60px;
+  height: 60px;
+
+  background-color: white;
+  background-image: url(../img/arrow.png) !important;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border: none;
+  border-radius: 30px;
+ 
+  opacity: .6;
+
+  cursor: pointer;
+
+  box-shadow: 0 0 10px #00000055;
+
+  transform: rotate(-180deg);
+
+  transition: box-shadow .2s, transform 1s, left 1.5s;
+}

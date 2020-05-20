@@ -178,5 +178,19 @@ $(function() {
     }
   });
 
+  $('.examples__form').on('change', function(event){
+    event.preventDefault();
+
+    console.log($(this).serializeArray()[0].value);
+
+    if($(this).serializeArray()[0].value == 'rev') {
+      $('.owl-next').addClass('dir');
+      $('.owl-prev').addClass('dir');
+    } else {
+      $('.owl-next').removeClass('dir');
+      $('.owl-prev').removeClass('dir');
+    }
+  });
+
   new WOW().init();
 });

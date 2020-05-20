@@ -59,6 +59,7 @@
 .owl-prev {
   position: absolute;
   top: 115px;
+  left: auto;
   right: -30px;
   z-index: 10;
 
@@ -81,7 +82,7 @@
 
   transform: rotate(180deg);
 
-  transition: box-shadow .2s;
+  transition: box-shadow .2s, transform 1s, right 1.5s;
 }
 
 .owl-prev:focus {
@@ -100,6 +101,7 @@
   position: absolute;
   top: 115px;
   left: -30px;
+  right: auto;
   z-index: 10;
 
   width: 60px;
@@ -119,7 +121,7 @@
 
   box-shadow: 0 0 10px #00000055;
 
-  transition: box-shadow .2s;
+  transition: box-shadow .2s, transform 1s, left 1.5s;
 }
 
 .owl-next:focus {
